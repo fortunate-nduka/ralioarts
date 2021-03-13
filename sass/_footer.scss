@@ -1,0 +1,271 @@
+.footer {
+    padding-top: 7rem;
+    background-color: $black;
+    padding-left: 2rem;
+
+    @media(min-width: $bp-md) {
+        padding-top: 8rem;
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+    }
+
+    @media(min-width: $bp-lg) {
+        grid-template-columns: 10rem 1fr;
+    }
+
+    &-heading {
+        font-family: matter-semibold;
+        font-size: 2.8rem;
+        color: $white;
+        padding-bottom: 1.5rem;
+
+        @media screen and (min-width: $bp-sm) {
+            font-size: 3.5rem;
+        }
+
+        @media screen and (min-width: $bp-lg) {
+            font-size: 4rem;
+        }
+    }
+
+    &-subheading {
+        font-family: matter-regular;
+        font-size: 2rem;
+        color: $white;
+
+        @media screen and (min-width: $bp-sm) {
+            font-size: 2.5rem;
+        }
+
+        @media screen and (min-width: $bp-lg) {
+            font-size: 3rem;
+        }
+    }
+
+    &-email,
+    &-tel {
+        font-size: 1.8rem;
+        color: rgba($color: $white, $alpha: .6);
+        font-family: matter-regular;
+
+        @media screen and (min-width: $bp-sm) {
+            font-size: 2rem;
+        }
+
+        @media screen and (min-width: $bp-lg) {
+            font-size: 2.3rem;
+        }
+    }
+
+    &-email {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__social-link {
+        font-size: 1.5rem;
+        font-family: matter-regular;
+        color: rgba($color: $white, $alpha: .4);
+
+        &:not(:last-child) {
+            padding-bottom: .9rem;
+
+            @media screen and (min-width: $bp-sm) {
+                padding-right: 3rem;
+            }
+        }
+
+        @media screen and (min-width: 670px) {
+            padding-right: 1rem;
+        }
+    }
+
+    &__social-links {
+        align-items: flex-start;
+        flex-direction: column;
+
+        @media screen and (min-width: $bp-sm) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: $bp-md) {
+            flex-wrap: wrap;
+            line-height: 2.4;
+            justify-self: right;
+            margin-left: auto;
+        }
+
+        @media screen and (min-width: $bp-lg) {
+            width: 50%;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__nav-links {
+        align-items: flex-start;
+        flex-direction: column;
+
+        @media screen and (min-width: $bp-sm) {
+            flex-direction: row;
+        }
+    }
+
+    &__nav-link {
+        display: inline-block;
+        font-size: 2.1rem;
+        font-family: matter-regular;
+        color: rgba($color: $white, $alpha: .4);
+
+        @media screen and (min-width: $bp-md) {
+            font-size: 2.3rem;
+        }
+
+        @media screen and (min-width: $bp-lg) {
+            font-size: 2.5rem;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: .9rem;
+
+            @media screen and (min-width: $bp-sm) {
+                padding-right: 2rem;
+            }
+
+            @media screen and (min-width: $bp-md) {
+                padding-right: 4rem;
+            }
+
+            @media screen and (min-width: $bp-lg) {
+                padding-right: 6rem;
+            }
+        }
+    }
+
+    &__copyright-text {
+        font-size: 1rem;
+        font-family: montserrat;
+        color: rgba($color: $white, $alpha: .6);
+    }
+
+    &-row {
+        &1 {
+            margin-bottom: 3rem;
+
+            @media screen and (min-width: $bp-sm) {
+                margin-bottom: 4rem;
+            }
+
+            @media screen and (min-width: $bp-md) {
+                margin-bottom: 6rem;
+            }
+
+            @media screen and (min-width: 800px) {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+        }
+
+        &2 {
+            margin-bottom: 3rem;
+
+            @media screen and (min-width: $bp-sm) {
+                margin-bottom: 4rem;
+            }
+
+            @media screen and (min-width: $bp-md) {
+                margin-bottom: 6rem;
+            }
+
+            @media screen and (min-width: 800px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        &3 {
+            margin-bottom: 2rem;
+
+            @media screen and (min-width: $bp-sm) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &4 {
+            border-top: 2px solid $black;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            @media(min-width: $bp-sm) {
+                padding: 3rem 1.5rem;
+            }
+        }
+    }
+
+    &-column {
+        &1 {
+            grid-column: 1/2;
+            grid-row: 1/-1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-10rem);
+
+            @media (max-width: $bp-md) {
+                display: none;
+            }
+
+            img {
+                width: 2.5rem;
+            }
+        }
+
+        &2 {
+            grid-column: 2/3;
+            grid-row: 1/-1;
+        }
+    }
+}
+
+.search {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0;
+
+    &__input {
+        font-family: matter-light;
+        font-size: 1.3rem;
+        color: #000000;
+        padding-left: 2.5rem;
+        border: none;
+        height: 100%;
+        outline: none;
+        width: 40rem;
+
+        @media screen and (min-width: $bp-md) {
+            width: 30rem;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 2rem;
+        width: 20%;
+        height: 100%;
+        background-color: $white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: matter-bold;
+        font-size: 1.7rem;
+
+        @media screen and (min-width: $bp-md) {
+            width: 15%;
+        }
+    }
+}

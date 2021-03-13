@@ -1,0 +1,109 @@
+.partners {
+    @media screen and (min-width: $bp-sm) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, min-content);
+    }
+
+    @media (min-width: $bp-md) {
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+
+
+    &-text {
+        padding: 3rem 0;
+    }
+
+    &-btn {
+        padding: 1rem 2rem;
+    }
+
+    &-1 {
+        background-color: $very-dim-blue;
+        grid-row: 1/2;
+        grid-column: 1/2;
+
+        img {
+            width: 8rem;
+        }
+    }
+
+    &-2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        background-color: #DCE2C6;
+
+        @media (min-width: $bp-md) {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    &-3 {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        background-color: #FAFEEC;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 4rem 2rem;
+
+        @media (min-width: $bp-md) {
+            grid-row: 1/-1;
+            grid-column: 2/3;
+            padding: 4rem 2rem;
+        }
+
+        @media (min-width: $bp-lg) {
+            grid-row: 1/-1;
+            grid-column: 2/3;
+            padding: 4rem;
+        }
+
+        img {
+            width: 23rem;
+        }
+    }
+
+    &-4 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background-color: #FFF1EF;
+
+        @media (min-width: $bp-md) {
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    &-5 {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        background-color: #023548;
+
+        @media (min-width: $bp-md) {
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+
+        img {
+            width: 5.5rem;
+        }
+    }
+}

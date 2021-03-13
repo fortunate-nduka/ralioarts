@@ -1,0 +1,49 @@
+.approach {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    @media(min-width: $bp-md) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    h2 {
+        padding-bottom: 4rem;
+
+        @media screen and (min-width: $bp-md) {
+            padding-bottom: 6rem;
+        }
+    }
+
+    &__grid {
+        @media screen and (min-width: $bp-sm) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6rem 5rem;
+        }
+
+        @media screen and (min-width: $bp-lg) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6rem 5rem;
+        }
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 6rem;
+
+                @media screen and (min-width: $bp-sm) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &-title {
+        padding: 1.5rem 0 1.5rem;
+    }
+
+    &-text {
+        width: 90%;
+    }
+}

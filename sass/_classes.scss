@@ -1,0 +1,144 @@
+//!------ HELPER CLASSES
+.flex {
+    display: flex;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.pd {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media(min-width: 450px) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @media(min-width: $bp-sm) {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+    @media(min-width: 650px) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    @media(min-width: $bp-md) {
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+
+    @media(min-width: $bp-lg) {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    @media(min-width: $bp-xlg) {
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
+}
+
+.pd-l {
+    padding-left: 2rem;
+
+    @media(min-width: 450px) {
+        padding-left: 3rem;
+    }
+
+    @media(min-width: $bp-sm) {
+        padding-left: 4.5rem;
+    }
+
+    @media(min-width: 650px) {
+        padding-left: 6rem;
+    }
+
+    @media(min-width: $bp-md) {
+        padding-left: 9rem;
+    }
+
+    @media(min-width: $bp-lg) {
+        padding-left: 12rem;
+    }
+
+    @media(min-width: $bp-xlg) {
+        padding-left: 14rem;
+    }
+}
+
+.pd-r {
+    padding-right: 2rem;
+
+    @media(min-width: 450px) {
+        padding-right: 3rem;
+    }
+
+    @media(min-width: $bp-sm) {
+        padding-right: 4.5rem;
+    }
+
+    @media(min-width: 650px) {
+        padding-right: 6rem;
+    }
+
+    @media(min-width: $bp-md) {
+        padding-right: 9rem;
+    }
+
+    @media(min-width: $bp-lg) {
+        padding-right: 12rem;
+    }
+
+    @media(min-width: $bp-xlg) {
+        padding-right: 14rem;
+    }
+}
+
+
+//!--------- BTN STYLES
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    font-family: matter-med;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn-outline {
+    border: 2px solid $black;
+    padding: 1.3rem 3.2rem;
+    color: $black;
+    background-image: linear-gradient(100deg, transparent 0%, transparent 50%, $black 50%);
+    background-size: 220%;
+    transition: all .4s;
+
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: $white;
+        transform: translateX(1rem);
+    }
+}
+
+.btn-blue {
+    background-color: $blue;
+    color: $white;
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+}

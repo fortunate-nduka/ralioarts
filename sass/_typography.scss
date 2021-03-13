@@ -1,0 +1,68 @@
+h1 {
+    font-size: 3.4rem;
+
+    @media screen and (min-width: $bp-sm) {
+        font-size: 4.5rem;
+    }
+
+    @media screen and (min-width: $bp-md) {
+        font-size: 5rem;
+    }
+
+    @media screen and (min-width: $bp-lg) {
+        font-size: 5.5rem;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: $black;
+    font-family: matter-bold;
+
+    @media screen and (min-width: $bp-sm) {
+        font-size: 4.5rem;
+    }
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: $black;
+    font-family: matter-bold;
+}
+
+p {
+    color: $grey;
+    font-size: 1.6rem;
+    font-family: matter-regular;
+    line-height: 1.6;
+}
+
+@font-face {
+    font-family: matter-med;
+    src: url(../assets/fonts/Matter-Medium.ttf);
+}
+
+@font-face {
+    font-family: matter-heavy;
+    src: url(../assets/fonts/Matter-Heavy.ttf);
+}
+
+@font-face {
+    font-family: matter-bold;
+    src: url(../assets/fonts/Matter-Bold.ttf);
+}
+
+@font-face {
+    font-family: matter-semibold;
+    src: url(../assets/fonts/Matter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: matter-regular;
+    src: url(../assets/fonts/Matter-Regular.ttf);
+}
+
+@font-face {
+    font-family: matter-light;
+    src: url(../assets/fonts/Matter-Light.ttf);
+}
